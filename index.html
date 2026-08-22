@@ -3,136 +3,636 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#250817">
-  <title>Happy Birthday 💗</title>
+  <meta name="theme-color" content="#180510">
+  <meta name="description" content="A little birthday surprise for Sonya">
+  <title>Happy Birthday SONYAWWW 💗</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- BACKGROUND PARTICLES -->
+  <!-- BACKGROUND -->
   <div id="particles" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
 
   <!-- LOADING -->
-  <section id="loadingScreen" class="screen active">
-    <div class="loader-flower">✿</div>
-    <p>Menyiapkan sesuatu yang spesial untuk kakak Sonya...</p>
-  </section>
+  <section id="loadingScreen" class="screen loading-screen">
+    <div class="loading-content">
+      <div class="loading-orbit">
+        <span>✦</span>
+        <span>♡</span>
+        <span>✿</span>
+      </div>
 
-  <!-- GIFT / ENTRY -->
-  <section id="giftScreen" class="screen hidden">
-    <div class="gift-wrap">
-      <span class="mini-label">♡ A LITTLE SURPRISE ♡</span>
-      <h1>ada hadiah kecil<br>buat lu 🎁</h1>
-      <p class="soft">Ketuk kotak hadiah untuk membukanya</p>
+      <div class="loader-flower">✿</div>
 
-      <button id="giftButton" class="gift-button" aria-label="Buka hadiah">
-        <span class="gift-lid"></span>
-        <span class="gift-box"></span>
-        <span class="gift-ribbon"></span>
-        <span class="gift-bow">∞</span>
-      </button>
+      <h2>something special...</h2>
+      <p>lagi nyiapin hadiah kecil buat Sonya</p>
 
-      <p class="tap-hint">✦ buka hadiahnya ✦</p>
+      <div class="loading-line">
+        <span></span>
+      </div>
     </div>
   </section>
 
-  <!-- MAIN WEBSITE -->
+  <!-- GIFT -->
+  <section id="giftScreen" class="screen gift-screen hidden">
+
+    <div class="gift-stars">
+      <span>✦</span>
+      <span>✧</span>
+      <span>♡</span>
+      <span>✦</span>
+      <span>✿</span>
+    </div>
+
+    <div class="gift-wrap">
+
+      <span class="mini-label">♡ A LITTLE SURPRISE ♡</span>
+
+      <h1>
+        ada hadiah kecil<br>
+        <em>buat lu</em> 🎁
+      </h1>
+
+      <p class="soft">
+        ketuk kotaknya pelan-pelan...
+      </p>
+
+      <button
+        id="giftButton"
+        class="gift-button"
+        aria-label="Buka hadiah"
+      >
+        <span class="gift-shadow"></span>
+        <span class="gift-box"></span>
+        <span class="gift-lid"></span>
+        <span class="gift-ribbon vertical"></span>
+        <span class="gift-ribbon horizontal"></span>
+        <span class="gift-bow left"></span>
+        <span class="gift-bow right"></span>
+        <span class="gift-bow-center"></span>
+      </button>
+
+      <div class="tap-hint">
+        <span>↓</span>
+        buka hadiahnya
+        <span>↓</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN -->
   <main id="mainContent" class="hidden">
 
     <!-- HERO -->
     <section class="hero section">
-      <div class="hero-glow"></div>
-      <div class="eyebrow">✿ YOUR SPECIAL DAY ✿</div>
-      <h1>Happy<br><em>Birthday</em><br><strong id="personName">Florence</strong></h1>
-      <p class="date-line" id="birthdayDate">Agustus 23· THE MOST SPECIAL DAY</p>
+
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="eyebrow">
+        ✿ YOUR SPECIAL DAY ✿
+      </div>
+
+      <div class="hero-number">23</div>
+
+      <h1>
+        Happy<br>
+        <em>Birthday</em><br>
+        <strong id="personName">SONYAWWW</strong>
+      </h1>
+
+      <p class="date-line" id="birthdayDate">
+        AGUSTUS 23 · THE MOST SPECIAL DAY
+      </p>
 
       <button class="music-pill" id="musicToggle">
-        <span id="musicIcon">▶</span> Tap untuk mulai musik
+        <span id="musicIcon">▶</span>
+        <span id="musicStatus">Tap untuk mulai musik</span>
       </button>
 
+      <!-- CAKE -->
       <div class="cake" aria-label="Kue ulang tahun">
-        <div class="candle c1">🕯️</div>
+
+        <div class="candle candle-one">
+          <span class="flame">🔥</span>
+        </div>
+
+        <div class="candle candle-two">
+          <span class="flame">🔥</span>
+        </div>
+
+        <div class="candle candle-three">
+          <span class="flame">🔥</span>
+        </div>
+
         <div class="cake-top"></div>
         <div class="cake-mid"></div>
         <div class="cake-bottom"></div>
+
+        <div class="cake-drip drip-one"></div>
+        <div class="cake-drip drip-two"></div>
+        <div class="cake-drip drip-three"></div>
+
         <div class="plate"></div>
       </div>
 
       <div class="hero-card">
-        <p>Happy Birthday, <span class="name-inline">Florence</span>! 🌷</p>
-        <small>yahahaha makinn tuwaa ajaa nihh .</small>
+        <div class="hero-card-icon">♡</div>
+
+        <p>
+          Happy Birthday,
+          <span class="name-inline">SONYAWWW</span>! 🌷
+        </p>
+
+        <small>
+          yahahaha makinn tuwaa ajaa nihh.
+        </small>
       </div>
 
-      <div class="scroll-cue">↓ scroll pelan-pelan ↓</div>
+      <div class="scroll-cue">
+        <span>↓</span>
+        scroll pelan-pelan
+        <span>↓</span>
+      </div>
+
     </section>
 
     <!-- MESSAGE -->
-    <section class="section message-section">
+    <section class="section reveal message-section">
+
       <div class="section-title">
         <span>01</span>
         <h2>A little message</h2>
-        <p>Karena ucapan “selamat ulang tahun” doang terlalu gampang.</p>
+        <p>
+          Karena ucapan “selamat ulang tahun” doang terlalu gampang.
+        </p>
       </div>
 
       <article class="letter-card">
-        <div class="letter-top">♡ untuk kamu ♡</div>
-        <p>
-          Selamat ulang tahun yaa sonya semoga lu bisa jadi lebih baik jangan maen
-          Roblox mulu si kalo kata gwa ini web kecil kecil an buatan tangan 
-          sendiri jadi maklumin kalo cuman ini aja pokok nha hbd yaa 
-        </p>
-        <p>
-          jangan lupa perbanyak doa lu biar keren jangan sampe lupa tuhan lu siapa
-          semoga dapet cowo dah yak
-        </p>
-        <p>
-          lu orang paling keren dah keren bet dah dah dah keren hbd yaa kakak sonyaaw
-        </p>
-        <div class="signature">with lots of love ♡</div>
+
+        <div class="letter-decoration">✿</div>
+
+        <div class="letter-top">
+          ♡ untuk kamu ♡
+        </div>
+
+        <div class="letter-content">
+
+          <p>
+            Selamat ulang tahun yaa Sonya.
+            Semoga lu bisa jadi lebih baik.
+            Jangan sering seringg maen Roblox 
+          </p>
+
+          <p>
+            Kalau kata gwa, ini web kecil-kecilan buatan tangan sendiri,
+            jadi maklumin kalo cuma begini aja.
+            Pokoknya HBD yaa kakak Sonyaaw.
+          </p>
+
+          <p>
+            Jangan lupa perbanyak doa lu biar makin keren.
+            Jangan sampe lupa Tuhan lu siapa 
+            
+          </p>
+
+          <p>
+            Lu orang paling keren dah.
+            Keren bet dah.
+            Dah dah dah keren.
+            HBD yaa kakak Sonyaaw. 💗
+          </p>
+
+        </div>
+
+        <div class="letter-divider">
+          <span>♡</span>
+        </div>
+
+        <div class="signature">
+          with lots of love ♡
+        </div>
+
       </article>
+
     </section>
 
     <!-- BOUQUET -->
-    <section class="section bouquet-section">
+    <section class="section reveal bouquet-section">
+
       <div class="section-title">
         <span>02</span>
         <h2>Digital Bouquet</h2>
-        <p>Setiap bunga menyimpan pesan kecil untukmu.</p>
+        <p>
+          Setiap bunga menyimpan pesan kecil untukmu.
+        </p>
       </div>
 
-      <div class="bouquet">
-        <div class="flower f1"><span>🌷</span></div>
-        <div class="flower f2"><span>🌹</span></div>
-        <div class="flower f3"><span>🌼</span></div>
-        <div class="flower f4"><span>🌸</span></div>
-        <div class="flower f5"><span>🌷</span></div>
-        <div class="stems"></div>
-        <div class="bouquet-pot">♡</div>
+      <div class="bouquet-area">
+
+        <div class="bouquet-glow"></div>
+
+        <div class="bouquet">
+
+          <div class="flower f1">
+            <span>🌷</span>
+          </div>
+
+          <div class="flower f2">
+            <span>🌹</span>
+          </div>
+
+          <div class="flower f3">
+            <span>🌼</span>
+          </div>
+
+          <div class="flower f4">
+            <span>🌸</span>
+          </div>
+
+          <div class="flower f5">
+            <span>🌷</span>
+          </div>
+
+          <div class="flower f6">
+            <span>🌺</span>
+          </div>
+
+          <div class="stems"></div>
+
+          <div class="bouquet-pot">
+            ♡
+          </div>
+
+        </div>
+
       </div>
 
       <div id="bouquetMessage" class="quote-box">
-        “Kamu secantik bunga tulip di musim semi, segar dan penuh harapan baru.”
+        “Ini sebagian dari yang gwa buat .”
       </div>
 
       <div class="flower-buttons">
-        <button data-message="Semoga bisa cepet cepet dapet cowo 🌷">🌷</button>
-        <button data-message="Semoga semua impian lu menemukan jalan pulang. 🌹">🌹</button>
-        <button data-message="Semoga akun roblox nya bisa beli korblox. 🌼">🌼</button>
-        <button data-message="Semoga makin jago kalo main gunung. 🌸">🌸</button>
+
+        <button data-message="Semoga bisa cepet-cepet dapet cowo 🌷">
+          🌷
+        </button>
+
+        <button data-message="Semoga semua impian lu menemukan jalan pulang. 🌹">
+          🌹
+        </button>
+
+        <button data-message="Semoga akun Roblox lu bisa beli Korblox. 🌼">
+          🌼
+        </button>
+
+        <button data-message="Semoga makin jago kalo main gunung. 🌸">
+          🌸
+        </button>
+
       </div>
+
     </section>
 
     <!-- MEMORIES -->
-    <section class="section memories-section">
+    <section class="section reveal memories-section">
+
       <div class="section-title">
         <span>03</span>
         <h2>Little Memories</h2>
-        <p>Masukkan foto-foto kalian di folder <b>assets</b>.</p>
+        <p>
+          Foto-foto kecil, kenangan yang nggak kecil.
+        </p>
       </div>
 
       <div class="memory-grid">
-        <button class="memory-card" data-img="assets/photo1.jpg" data-title="First Memory">
-          <img src="assets/photo1.jpg" alt="Memory 1" onerror="this.src='assets/placeholder.svg'">
+
+        <button
+          class="memory-card"
+          data-img="assets/photo1.jpg"
+          data-title="First Memory"
+        >
+          <div class="memory-image">
+            <img
+              src="assets/photo1.jpg"
+              alt="Memory 1"
+              onerror="this.src='assets/placeholder.svg'"
+            >
+            <span class="memory-number">01</span>
+            <span class="zoom-icon">↗</span>
+          </div>
+
+          <div class="memory-info">
+            <span>First Memory</span>
+            <small>sebuah kenangan kecil ♡</small>
+          </div>
+        </button>
+
+        <button
+          class="memory-card"
+          data-img="assets/photo2.jpg"
+          data-title="Best Moment"
+        >
+          <div class="memory-image">
+            <img
+              src="assets/photo2.jpg"
+              alt="Memory 2"
+              onerror="this.src='assets/placeholder.svg'"
+            >
+            <span class="memory-number">02</span>
+            <span class="zoom-icon">↗</span>
+          </div>
+
+          <div class="memory-info">
+            <span>Best Moment</span>
+            <small>momen yang bikin senyum</small>
+          </div>
+        </button>
+
+        <button
+          class="memory-card"
+          data-img="assets/photo3.jpg"
+          data-title="Random Moment"
+        >
+          <div class="memory-image">
+            <img
+              src="assets/photo3.jpg"
+              alt="Memory 3"
+              onerror="this.src='assets/placeholder.svg'"
+            >
+            <span class="memory-number">03</span>
+            <span class="zoom-icon">↗</span>
+          </div>
+
+          <div class="memory-info">
+            <span>Random Moment</span>
+            <small>random tapi berharga</small>
+          </div>
+        </button>
+
+        <button class="memory-card reveal-card">
+          <div class="reveal-inner">
+            <span class="camera">✦</span>
+            <b>More memories</b>
+            <small>isi dengan foto favoritmu</small>
+          </div>
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- REASONS -->
+    <section class="section reveal reasons-section">
+
+      <div class="section-title">
+        <span>04</span>
+        <h2>Reasons</h2>
+        <p>
+          Beberapa alasan kenapa kamu begitu spesial.
+        </p>
+      </div>
+
+      <div class="reason-list">
+
+        <article class="reason">
+          <b>01</b>
+          <div>
+            <h3>Your smile</h3>
+            <p>
+              Entah kenapa senyum sederhana bisa bikin suasana berubah.
+            </p>
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="reason">
+          <b>02</b>
+          <div>
+            <h3>Your kindness</h3>
+            <p>
+              Kebaikan kecil yang mungkin kamu anggap biasa ternyata berarti.
+            </p>
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="reason">
+          <b>03</b>
+          <div>
+            <h3>Your existence</h3>
+            <p>
+              Cukup dengan menjadi diri sendiri, kamu sudah punya arti.
+            </p>
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="reason">
+          <b>04</b>
+          <div>
+            <h3>Your weird side</h3>
+            <p>
+              Sisi random kamu justru salah satu hal yang paling menyenangkan.
+            </p>
+          </div>
+          <span>♡</span>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- MUSIC -->
+    <section class="section reveal music-section">
+
+      <div class="section-title">
+        <span>05</span>
+        <h2>Our Little Playlist</h2>
+        <p>
+          Lagu kecil buat nemenin hari spesial lu.
+        </p>
+      </div>
+
+      <div class="player">
+
+        <div class="player-top">
+
+          <div class="record-wrap">
+            <div class="record">
+              <div class="record-label">
+                <span>♡</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-info">
+            <span class="now-playing">
+              NOW PLAYING
+            </span>
+
+            <h3 id="trackTitle">
+              Monokrom
+            </h3>
+
+            <small id="trackArtist">
+              Tulus
+            </small>
+          </div>
+
+        </div>
+
+        <div class="progress-wrap">
+
+          <span id="currentTime">0:00</span>
+
+          <input
+            id="progress"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            aria-label="Music progress"
+          >
+
+          <span id="duration">0:00</span>
+
+        </div>
+
+        <div class="player-controls">
+
+          <button id="prevTrack" aria-label="Previous">
+            ↶
+          </button>
+
+          <button
+            id="playTrack"
+            class="play-main"
+            aria-label="Play"
+          >
+            ▶
+          </button>
+
+          <button id="nextTrack" aria-label="Next">
+            ↷
+          </button>
+
+        </div>
+
+        <div id="playlist" class="playlist"></div>
+
+      </div>
+
+    </section>
+
+    <!-- WISH -->
+    <section class="section reveal wish-section">
+
+      <div class="wish-stars">
+        ✦　✧　♡　✧　✦
+      </div>
+
+      <div class="wish-card">
+
+        <span class="mini-label">
+          ♡ ONE LAST THING ♡
+        </span>
+
+        <h2>
+          Make a little wish.
+        </h2>
+
+        <p>
+          Tekan tombolnya, tutup mata sebentar,
+          dan pikirkan sesuatu yang kamu inginkan.
+        </p>
+
+        <button
+          id="wishButton"
+          class="primary-button"
+        >
+          Make a Wish ✨
+        </button>
+
+        <div
+          id="wishResult"
+          class="wish-result hidden"
+        >
+          <span>✨</span>
+          <b>Semoga terkabul.</b>
+          <small>
+            Pelan-pelan, satu per satu.
+            Kamu pasti sampai.
+          </small>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+      <div class="footer-heart">
+        ♡
+      </div>
+
+      <div>
+        Made with ♡ for
+        <span class="name-inline">SONYAWWW</span>
+      </div>
+
+      <small>
+        © <span id="year"></span>
+        · a tiny digital surprise
+      </small>
+
+    </footer>
+
+  </main>
+
+  <!-- MODAL -->
+  <div
+    id="imageModal"
+    class="modal hidden"
+    aria-hidden="true"
+  >
+
+    <button
+      class="modal-close"
+      id="closeModal"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+    <div class="modal-content">
+
+      <img
+        id="modalImage"
+        src=""
+        alt="Memory preview"
+      >
+
+      <p id="modalTitle"></p>
+
+    </div>
+
+  </div>
+
+  <!-- AUDIO -->
+  <audio
+    id="audioPlayer"
+    preload="metadata"
+  ></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>          <img src="assets/photo1.jpg" alt="Memory 1" onerror="this.src='assets/placeholder.svg'">
           <span>First Memory</span>
           <small>sebuah kenangan kecil ♡</small>
         </button>
