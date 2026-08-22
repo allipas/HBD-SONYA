@@ -20,7 +20,7 @@ const CONFIG = {
       artist: "tulus",
       file: "assets/music/tulus.mp3"
     }
-  ];
+  ]
 
 /* =========================================================
    ELEMENTS
