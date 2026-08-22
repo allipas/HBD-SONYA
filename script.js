@@ -22,6 +22,8 @@ const CONFIG = {
     }
   ]
 
+};
+
 /* =========================================================
    ELEMENTS
    ========================================================= */
@@ -88,31 +90,63 @@ if(year){
    LOADING
    ========================================================= */
 
-window.addEventListener("load", () => {
+/* =========================================================
+   LOADING
+   ========================================================= */
 
+function startLoadingScreen() {
+
+  // Pastikan halaman tidak bisa discroll saat loading
   document.body.style.overflow = "hidden";
 
+  console.log("♡ Loading screen started ♡");
+
+  // Tunggu 1.8 detik
   setTimeout(() => {
 
-    if(loading){
+    // Mulai animasi keluar
+    if (loading) {
       loading.classList.add("fade-out");
     }
 
+    // Tunggu animasi fade selesai
     setTimeout(() => {
 
-      if(loading){
+      // Sembunyikan loading
+      if (loading) {
         loading.classList.add("hidden");
       }
 
-      if(giftScreen){
+      // Tampilkan gift screen
+      if (giftScreen) {
         giftScreen.classList.remove("hidden");
       }
+
+      console.log("♡ Loading selesai — Gift screen aktif ♡");
 
     }, 850);
 
   }, 1800);
+}
 
-});
+
+/*
+   JANGAN pakai window "load"
+   karena bisa tertahan oleh gambar/audio/resource lain.
+*/
+
+if (document.readyState === "loading") {
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    startLoadingScreen
+  );
+
+} else {
+
+  startLoadingScreen();
+
+}
 
 
 /* =========================================================
