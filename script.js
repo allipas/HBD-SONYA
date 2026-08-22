@@ -17,11 +17,13 @@ const CONFIG = {
   music: [
     {
       title: "Monokrom",
-      artist: "Tulus",
+      artist: "Plain White Ts",
       file: "assets/music/tulus.mp3"
     }
   ]
-
+  { title: "Hey There Delilah",
+      artist: "Tulus",
+      file: "assets/music/Hey There Delilah.mp3"
 };
 
 
