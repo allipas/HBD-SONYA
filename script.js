@@ -17,7 +17,7 @@ const CONFIG = {
   music: [
     {
       title: "Monokrom",
-      artist: "Plain White Ts",
+      artist: "tulus",
       file: "assets/music/tulus.mp3"
     }
   ];
