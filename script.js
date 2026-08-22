@@ -7,7 +7,7 @@ const CONFIG = {
   name: "SONYAWWW",
   birthday: "AGUSTUS 23 · THE MOST SPECIAL DAY",
   music: [
-     file: "assets/music/nama-lagu.mp3"
+     file: "assets/music/tulus.mp3"
   ]
 };
 
