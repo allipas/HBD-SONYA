@@ -20,7 +20,7 @@ const CONFIG = {
       artist: "Plain White Ts",
       file: "assets/music/tulus.mp3"
     }
-  ]
+  ];
 
 /* =========================================================
    ELEMENTS
